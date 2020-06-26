@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animapp documentation &#8212; Animapp  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="animapp-documentation">
+<h1><a class="toc-backref" href="#id1">Animapp documentation</a><a class="headerlink" href="#animapp-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-conda">Install conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#conda-channels">Conda channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#virtual-environment">Virtual environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-animapp">Install Animapp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#operating-systems">Operating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citation.html">Citation</a></li>
+</ul>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#animapp-documentation" id="id1">Animapp documentation</a></p>
+<ul>
+<li><p><a class="reference internal" href="#what-is-animapp" id="id2">What is Animapp?</a></p></li>
+<li><p><a class="reference internal" href="#quick-start" id="id3">Quick-start</a></p>
+<ul>
+<li><p><a class="reference internal" href="#installation" id="id4">Installation</a></p></li>
+<li><p><a class="reference internal" href="#videos" id="id5">Videos</a></p></li>
+<li><p><a class="reference internal" href="#thresholding" id="id6">Thresholding</a></p></li>
+<li><p><a class="reference internal" href="#analysis" id="id7">Analysis</a></p></li>
+<li><p><a class="reference internal" href="#results" id="id8">Results</a></p>
+<ul>
+<li><p><a class="reference internal" href="#csv-file" id="id9">.csv file</a></p></li>
+<li><p><a class="reference internal" href="#processed-csv-file" id="id10">_processed.csv file</a></p></li>
+<li><p><a class="reference internal" href="#pdf-file" id="id11">.pdf file</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#search" id="id12">Search</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="what-is-animapp">
+<h2><a class="toc-backref" href="#id2">What is Animapp?</a><a class="headerlink" href="#what-is-animapp" title="Permalink to this headline">¶</a></h2>
+<p>Animapp is a cross-platform package to analyse the movement of an object in a video. It
+leverages the powerful <a class="reference external" href="https://opencv.org/">OpenCV</a> framework to analyse videos and extract position
+information in each frame. This an be used in the field of biological research to
+track the movement of small animals and measure parameters such as distance and
+velocity.</p>
+</div>
+<div class="section" id="quick-start">
+<h2><a class="toc-backref" href="#id3">Quick-start</a><a class="headerlink" href="#quick-start" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="installation">
+<h3><a class="toc-backref" href="#id4">Installation</a><a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
+<p>This is described in detail on the <a class="reference internal" href="installation.html"><span class="doc">Installation</span></a> page:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+<span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">animapp_env</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">animapp_env</span>
+<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">sraorao</span> <span class="n">animapp</span>
+
+<span class="n">threshold</span>
+<span class="n">animapp</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="videos">
+<h3><a class="toc-backref" href="#id5">Videos</a><a class="headerlink" href="#videos" title="Permalink to this headline">¶</a></h3>
+<p>Animapp recognises files of the most common video formats (.mp4, .mkv, .avi) at a resolution
+of 640x480 or higher. In the current version, the videos are downsampled to 640x480. This may
+not be good if the object to be tracked in the video is too small relative to the field of
+view. If you are unsure, it may just be easier to give it a try.</p>
+</div>
+<div class="section" id="thresholding">
+<h3><a class="toc-backref" href="#id6">Thresholding</a><a class="headerlink" href="#thresholding" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">threshold</span></code> program must be used first to record the following settings in a file named
+<code class="docutils literal notranslate"><span class="pre">settings.yaml</span></code> in the working directory. This file may be manually created, but has to exist
+before proceeding to the next step of analysis.</p>
+<ul class="simple">
+<li><p>hue, saturation, value - set using the double sliders at the top of the threshold window</p></li>
+<li><p>starting frame - set using the slider (useful when initial setup in the video interferes with object detection)</p></li>
+<li><p>rotation - clockwise or anti-clockwise, set using numberbox at the bottom of the window</p></li>
+<li><p>crop - left click and drag on the colour image to draw green rectangle denoting crop area</p></li>
+</ul>
+<p>If you have a number of videos to analyse, running <code class="docutils literal notranslate"><span class="pre">threshold</span></code> on any one exemplar video
+is sufficient, as long as the camera setup does not change between videos. If the camera
+type, orientation, illumination in the room, etc. change between videos, the threshold values
+are no longer valid (and it may also mean that the videos are not comparable, obviously!).
+Hence it is essential to keep all the video variables consistent among all the videos that
+are being analysed.</p>
+</div>
+<div class="section" id="analysis">
+<h3><a class="toc-backref" href="#id7">Analysis</a><a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h3>
+<p>Finally, run the <code class="docutils literal notranslate"><span class="pre">animapp</span></code> program to analyse the video(s) of interest. Click on the
+<code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">video</span></code> button to select the video (use ctrl+click to select multiple videos) and
+on the <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">video</span></code> to start the analysis. Wait for the video(s) to stop running in the
+window, this may take a while if you have a large number of videos but you can leave it
+unattended. Once that is finished (you should see .csv files corresponding to each video
+in the same folder as the videos), click on the <code class="docutils literal notranslate"><span class="pre">Process</span> <span class="pre">results</span></code> button to post-process
+the results. This will give you another file with the suffix _processed.csv, and a pdf file.</p>
+</div>
+<div class="section" id="results">
+<h3><a class="toc-backref" href="#id8">Results</a><a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h3>
+<p>Three files are created in the same folder as the video, at the end of the analysis and post-processing.</p>
+<div class="section" id="csv-file">
+<h4><a class="toc-backref" href="#id9">.csv file</a><a class="headerlink" href="#csv-file" title="Permalink to this headline">¶</a></h4>
+<p>The raw .csv (Comma Separated Values) file contains the following columns (in that order):</p>
+<ol class="arabic simple">
+<li><p>x coordinate</p></li>
+<li><p>y coordinate</p></li>
+<li><p>Frame number</p></li>
+<li><p>Bounding box coordinate</p></li>
+<li><p>Bounding box coordinate</p></li>
+<li><p>Bounding box coordinate</p></li>
+<li><p>Bounding box coordinate</p></li>
+<li><p>Bounding box angle</p></li>
+</ol>
+<p>Only columns 1-3 are used for post-processing, but the bounding box parameters are there to
+be analysed if they are of interest.</p>
+</div>
+<div class="section" id="processed-csv-file">
+<h4><a class="toc-backref" href="#id10">_processed.csv file</a><a class="headerlink" href="#processed-csv-file" title="Permalink to this headline">¶</a></h4>
+<p>Some frames may be missing in the raw csv (e.g. the frame number may jump from 5 to 10) due to
+aggressive thresholding or because the object is not in the field of the camera. These frames
+are then not recorded at all and the rows corresponding to those frames are missing. In these
+cases, the missing frames are filled in with the last recorded frame (in order to keep the
+distance accurate). This may seem like the object remained stationary for a long time, and then
+moved a long distance within a short time. If the number of missing frames is small, the
+estimated distance and velocity may not be far from the truth, but keep an eye out for the
+object being ‘lost’ in a large number of frames. The processed csv has the following columns in
+that order:</p>
+<ol class="arabic simple">
+<li><p>x coordinate</p></li>
+<li><p>y coordinate</p></li>
+<li><p>Frame number</p></li>
+<li><p>Distance from the previous location (summing this column will give you total distance travelled in the entire video)</p></li>
+<li><p>Rolling velocity - Rolling velocity is the distance travelled per 10 frames (NA for the first and last 10 frames)</p></li>
+</ol>
+</div>
+<div class="section" id="pdf-file">
+<h4><a class="toc-backref" href="#id11">.pdf file</a><a class="headerlink" href="#pdf-file" title="Permalink to this headline">¶</a></h4>
+<p>This is a trace of the object’s movement. This is only a diagnostic plot to quickly identify
+problems with thresholding. Better plots can be generated using several packages in software
+such as Python and R.</p>
+</div>
+</div>
+</div>
+<div class="section" id="search">
+<h2><a class="toc-backref" href="#id12">Search</a><a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">Animapp</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citation.html">Citation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="installation.html" title="next chapter">Installation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Srinivasa Rao.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

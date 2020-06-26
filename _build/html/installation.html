@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation &#8212; Animapp  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Settings" href="settings.html" />
+    <link rel="prev" title="Animapp documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Installation can be done using <a class="reference external" href="https://docs.conda.io/en/latest/">conda</a> or <a class="reference external" href="https://pypi.org/project/pip/">pip</a>. However, conda is strongly recommended.
+Some familiarity with the commandline could come in handy - this is the Terminal in
+MacOS and Linux, and the Anaconda Prompt in Windows.</p>
+<div class="section" id="install-conda">
+<h2>Install conda<a class="headerlink" href="#install-conda" title="Permalink to this headline">¶</a></h2>
+<p>You can skip this section if you already have conda (Anaconda or Miniconda) installed
+on your system. To install conda, go to the <a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a> website and install Miniconda3
+(python 3) by following the instructions specific to your operating system. Conda can
+also be installed with <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> but this is not required to run Animapp.</p>
+</div>
+<div class="section" id="conda-channels">
+<h2>Conda channels<a class="headerlink" href="#conda-channels" title="Permalink to this headline">¶</a></h2>
+<p>Add the <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code> channel using <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="virtual-environment">
+<h2>Virtual environment<a class="headerlink" href="#virtual-environment" title="Permalink to this headline">¶</a></h2>
+<p>It is highly recommended that you install Animapp within a virtual environment in order
+to ensure that all the dependencies are satisfied, and also to keep your python setup
+organised. For example, to create an environment named <code class="docutils literal notranslate"><span class="pre">animapp_env</span></code>, type the
+following at the commandline:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">animapp_env</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-animapp">
+<h2>Install Animapp<a class="headerlink" href="#install-animapp" title="Permalink to this headline">¶</a></h2>
+<p>First activate the newly created channel:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">animapp_env</span>
+</pre></div>
+</div>
+<p>Then install the Animapp package:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">sraorao</span> <span class="n">animapp</span>
+</pre></div>
+</div>
+<p>That’s it! Check that the installation is working by trying these at the commandline. You
+should see a short message on usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">threshold</span> <span class="o">-</span><span class="n">h</span>
+<span class="n">animapp</span> <span class="o">-</span><span class="n">h</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operating-systems">
+<h2>Operating systems<a class="headerlink" href="#operating-systems" title="Permalink to this headline">¶</a></h2>
+<p>Animapp has been tested on</p>
+<ul class="simple">
+<li><p>Ubuntu Linux 18.04</p></li>
+<li><p>MacOS High Sierra</p></li>
+<li><p>Windows 10</p></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Animapp</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-conda">Install conda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conda-channels">Conda channels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#virtual-environment">Virtual environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-animapp">Install Animapp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operating-systems">Operating systems</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="citation.html">Citation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Animapp documentation</a></li>
+      <li>Next: <a href="settings.html" title="next chapter">Settings</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Srinivasa Rao.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/installation.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
