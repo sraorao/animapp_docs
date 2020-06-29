@@ -57,6 +57,8 @@ view. If you are unsure, it may just be easier to give it a try.
 Thresholding
 ------------
 
+.. image:: threshold.png
+
 The ``threshold`` program must be used first to record the following settings in a file named
 ``settings.yaml`` in the working directory. This file may be manually created, but has to exist
 before proceeding to the next step of analysis.
@@ -76,6 +78,8 @@ are being analysed.
 Analysis
 --------
 
+.. image:: animapp.png
+
 Finally, run the ``animapp`` program to analyse the video(s) of interest. Click on the 
 ``Load video`` button to select the video (use ctrl+click to select multiple videos) and
 on the ``Run video`` to start the analysis. Wait for the video(s) to stop running in the 
@@ -89,6 +93,7 @@ Results
 
 Three files are created in the same folder as the video, at the end of the analysis and post-processing.
 
+.. image:: diagnostic_plot.png
 
 .csv file
 ^^^^^^^^^
