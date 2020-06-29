@@ -27,7 +27,7 @@ Animapp is a cross-platform package to analyse the movement of an object in a vi
 leverages the powerful OpenCV_ framework to analyse videos and extract position
 information in each frame. This an be used in the field of biological research to 
 track the movement of small animals and measure parameters such as distance and 
-velocity.
+velocity. 
 
 Quick-start
 ===========
