@@ -80,10 +80,10 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul class="current">
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#install-conda">Install conda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#conda-channels">Conda channels</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#virtual-environment">Virtual environment</a></li>
@@ -94,6 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="settings.html">Settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="support.html">Support</a></li>
 <li class="toctree-l1"><a class="reference internal" href="citation.html">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 
             
@@ -163,6 +164,14 @@
 <p>Installation can be done using <a class="reference external" href="https://docs.conda.io/en/latest/">conda</a> or <a class="reference external" href="https://pypi.org/project/pip/">pip</a>. However, conda is strongly recommended.
 Some familiarity with the commandline could come in handy - this is the Terminal in
 MacOS and Linux, and the Anaconda Prompt in Windows.</p>
+<div class="section" id="requirements">
+<h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Operating system - Animapp has been tested on Windows 10, MacOS High Sierra, and Ubuntu Linux 19.10</p></li>
+<li><p>Miniconda3 - A python 3 environment is required, which can be set up using Miniconda (see below)</p></li>
+<li><p>Hardware - The OpenCV library is large and takes up a lot of space after installation. The entire Animapp environment needs ~1.5 GB, which should not be difficult in most systems. Other than this, any reasonably modern laptop or home PC should be able to run Animapp.</p></li>
+</ul>
+</div>
 <div class="section" id="install-conda">
 <h2>Install conda<a class="headerlink" href="#install-conda" title="Permalink to this headline">¶</a></h2>
 <p>You can skip this section if you already have conda (Anaconda or Miniconda) installed
@@ -179,9 +188,9 @@ also be installed with <a class="reference external" href="https://docs.anaconda
 </div>
 <div class="section" id="virtual-environment">
 <h2>Virtual environment<a class="headerlink" href="#virtual-environment" title="Permalink to this headline">¶</a></h2>
-<p>It is highly recommended that you install Animapp within a virtual environment in order
-to ensure that all the dependencies are satisfied, and also to keep your python setup
-organised. For example, to create an environment named <code class="docutils literal notranslate"><span class="pre">animapp_env</span></code>, type the
+<p>It is highly recommended that you install Animapp within a virtual environment to ensure that
+all the dependencies are satisfied, and also to keep your python setup organised.
+For example, to create an environment named <code class="docutils literal notranslate"><span class="pre">animapp_env</span></code>, type the
 following at the commandline:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">animapp_env</span>
 </pre></div>

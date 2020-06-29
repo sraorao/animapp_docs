@@ -6,6 +6,13 @@ Installation can be done using conda_ or pip_. However, conda is strongly recomm
 Some familiarity with the commandline could come in handy - this is the Terminal in
 MacOS and Linux, and the Anaconda Prompt in Windows.
 
+Requirements
+============
+
+* Operating system - Animapp has been tested on Windows 10, MacOS High Sierra, and Ubuntu Linux 19.10
+* Miniconda3 - A python 3 environment is required, which can be set up using Miniconda (see below)
+* Hardware - The OpenCV library is large and takes up a lot of space after installation. The entire Animapp environment needs ~1.5 GB, which should not be difficult in most systems. Other than this, any reasonably modern laptop or home PC should be able to run Animapp.
+
 Install conda
 =============
 
@@ -25,9 +32,9 @@ Add the ``conda-forge`` channel using ``conda config``::
 Virtual environment
 ===================
 
-It is highly recommended that you install Animapp within a virtual environment in order
-to ensure that all the dependencies are satisfied, and also to keep your python setup
-organised. For example, to create an environment named ``animapp_env``, type the 
+It is highly recommended that you install Animapp within a virtual environment to ensure that 
+all the dependencies are satisfied, and also to keep your python setup organised. 
+For example, to create an environment named ``animapp_env``, type the 
 following at the commandline::
 
 	conda create -n animapp_env

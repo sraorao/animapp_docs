@@ -16,6 +16,7 @@ Animapp documentation
    settings
    support
    citation
+   changelog
 
 .. contents::
 

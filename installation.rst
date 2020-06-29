@@ -11,9 +11,7 @@ Requirements
 
 * Operating system - Animapp has been tested on Windows 10, MacOS High Sierra, and Ubuntu Linux 19.10
 * Miniconda3 - A python 3 environment is required, which can be set up using Miniconda (see below)
-* Hardware - The OpenCV library is large and takes up a lot of space after installation. The entire 
-Animapp environment needs ~1.5 GB, which should not be difficult in most systems. Other than this, 
-any reasonably modern laptop or home PC should be able to run Animapp.
+* Hardware - The OpenCV library is large and takes up a lot of space after installation. The entire Animapp environment needs ~1.5 GB, which should not be difficult in most systems. Other than this, any reasonably modern laptop or home PC should be able to run Animapp.
 
 Install conda
 =============
